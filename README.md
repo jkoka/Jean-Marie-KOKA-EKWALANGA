@@ -19,3 +19,9 @@ python3 sauvegarde_Wordpress.py.3
 # Planifier l'execution du script par intervalle regulier  de 2 heures à l'aide de crontab
 /etc/cron.d/sauvegarde_Wordpress.py.3
 0 2 * * python3 /usr/local/bin/sauvegarde_Wordpress.py.3
+# Envoi de la sauvegarde dans le serveur ftp dans le repertoire backup.
+scpcp="scp *.sql  esperance@10.0.2.5:backup"
+
+
+
+
