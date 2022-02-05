@@ -17,5 +17,5 @@ chmod +x dbbackup.py
 # Executer le script comme ceci
 python3 sauvegarde_Wordpress.py.3
 # Planifier l'execution du script par intervalle regulier  de 2 heures à l'aide de crontab
-crontab -e
-0 2 * * python3 /usr/local/bin
+/etc/cron.d/sauvegarde_Wordpress.py.3
+0 2 * * python3 /usr/local/bin/sauvegarde_Wordpress.py.3
